@@ -1,9 +1,9 @@
 ## Image Processing Simulator for Krauss Lab Tribology Research Fall 2022 - Spring 2023. 
 
 #### This repo also contains Dummy GSG Images for training and testing - 0.1%, 1%, 2%, 3%, 4%, and 5% Hitec dispersant additives were suspended with  GSG in the particle images.   <br>
-     <br>
-          <br>
-              <br>
+
+
+
 **Particle Image Threshold Simulator**
 
 This Google Colab Notebook provides an efficient, alternative method to threshold images instead of using ImageJ. After grayscale, ImageJ requires 4 manual steps for threshold:
