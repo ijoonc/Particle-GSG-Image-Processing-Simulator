@@ -35,16 +35,19 @@ We have two solutions that are work in progress.
 
 1) *Rolling Ball*: a Python library specifically designed to help reduce shading errors in images. It is the same library that ImageJ uses to apply shading corrections. 
 
+```
 How it works: separated background from objects of interest, then evenly shades the background, and places objects (the particles) on top of the new background.
 
 Issue: this function does not account for ALL shading differences. Our threshold simulator takes into account the specific pixel values of the background. Even after the rolling ball correction, the pixel values still heavily contrast with one another, causing a black and white "noise-like" image.
+```
 
 2) *CLAHE:* stands for Contrast Limited Adaptive Histogram Equalization; enhances the contrast of the image. 
 
-> How it works: divides the image into small tiles and equalizes each tile's shading histogram. This helps to improve local contrast while reducing over-amplification of noise.
+```
+How it works: divides the image into small tiles and equalizes each tile's shading histogram. This helps to improve local contrast while reducing over-amplification of noise.
 
-> Issue: The pixel values of the background image STILL heavily contrast from one another even with contrast enhancement and de-amplification of noise.
-
+Issue: The pixel values of the background image STILL heavily contrast from one another even with contrast enhancement and de-amplification of noise.
+```
 
 
 **What To Do Moving Forward**
