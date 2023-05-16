@@ -41,9 +41,9 @@ Issue: this function does not account for ALL shading differences. Our threshold
 
 2) *CLAHE:* stands for Contrast Limited Adaptive Histogram Equalization; enhances the contrast of the image. 
 
-How it works: divides the image into small tiles and equalizes each tile's shading histogram. This helps to improve local contrast while reducing over-amplification of noise.
+> How it works: divides the image into small tiles and equalizes each tile's shading histogram. This helps to improve local contrast while reducing over-amplification of noise.
 
-Issue: The pixel values of the background image STILL heavily contrast from one another even with contrast enhancement and de-amplification of noise.
+> Issue: The pixel values of the background image STILL heavily contrast from one another even with contrast enhancement and de-amplification of noise.
 
 
 
