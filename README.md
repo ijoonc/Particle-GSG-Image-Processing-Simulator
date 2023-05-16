@@ -1,6 +1,7 @@
 ### This repo contains codespaces for the Image Processing Simulator for Krauss Lab Tribology Research Fall 2022 - Spring 2023. It also contains Dummy GSG Images for training and testing - 0.1%, 1%, 2%, 3%, 4%, and 5% Hitec dispersant additives were suspended with  GSG in the particle images.
 
 **Particle Image Threshold Simulator**
+
 This Google Colab Notebook provides an efficient, alternative method to threshold images instead of using ImageJ. After grayscale, ImageJ requires 4 manual steps for threshold:
 
 1) *Plane Brightness Adjustment:* used to shade background evenly for each image to avoid illumination errors.
@@ -21,6 +22,7 @@ Our *automated Threshold Simulator* accounts for these unaccounted particles and
 Source: https://www.bogotobogo.com/python/OpenCV_Python/python_opencv3_Image_Watershed_Algorithm_Marker_Based_Segmentation.php
 
 **Machine Learning Algorithm**
+
 We face a huge barrier where our threshold simulator only applies to images that have been shaded evenly prior to analysis. Providing images with uneven shading to this program will cause it to produce very inaccurate results. Precisely, our algorithm cannot tell the difference between the particles of interest and the darker shading in the image. This causes Otsu's Binary Threshold to fail, leading to the following sequences to also fail and produce inaccurate results.
 
 We have two solutions that are work in progress.
