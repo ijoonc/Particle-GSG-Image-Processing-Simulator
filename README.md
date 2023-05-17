@@ -60,5 +60,5 @@ Source: Peng, Tingying, et al. “A Basic Tool for Background and Shading Correc
 2) BaSiCs functions require parameter tuning and these measures are typically unknown for our images.
 3) BaSiCs functions also require preprocessing of images such as denoising, smooting, and image enhancement. Our current algorithm preprocesses images AFTER the shading correction, not prior.
 
-We also plan to develop an *automated Watershed algorithm*. Samples with a large amount of suspeneded GSG tend to be very dense so particle clumps are usually connected, making it difficult to differentiate using AI and the human eye. We can automate the Watershed process by implmenting an algorithm that can account for ImageJ particle count errors AND differentiate the clumps accordingly.
+We also plan to develop an *automated Watershed algorithm*. Samples with a large amount of suspeneded GSG tend to be very dense so particle clumps are usually connected, making it difficult to differentiate using AI AND the human eye. We can automate the Watershed process by implementing an algorithm that can account for ImageJ particle count errors AND differentiate the clumps accordingly.
 
